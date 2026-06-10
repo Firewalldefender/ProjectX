@@ -1,0 +1,31 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "variables/data_types/control_flow/functions",
+      "difficulty": "easy/medium/hard",
+      "question": "The question",
+      "options": ["A", "B", "C", "D"],
+      "answer": 1,
+      "explanation": "short explanation maybe?"
+    },
+    {
+      "id": 2,
+      "category": "data_types",
+      "difficulty": "easy",
+      "question": "Which of the following data types in Python is immutable?",
+      "options": ["list", "dictionary", "tuple", "set"],
+      "answer": 2,
+      "explanation": "A tuple is an immutable sequence type in Python, meaning its elements cannot be changed, added, or removed once created. Lists, dictionaries, and sets are mutable."
+    },
+    {
+      "id": 3,
+      "category": "control_flow",
+      "difficulty": "medium",
+      "question": "How many times will the word 'Hello' be printed?\n\ni = 0\nwhile i < 3:\n    print('Hello')\n    i += 1",
+      "options": ["2", "3", "4", "An infinite number of times"],
+      "answer": 1,
+      "explanation": "The loop starts with i = 0. It prints 'Hello' and increments i to 1, then prints again and increments to 2, and prints a third time and increments to 3. At i = 3, the condition 3 < 3 becomes False, and the loop terminates."
+    }
+  ]
+}
