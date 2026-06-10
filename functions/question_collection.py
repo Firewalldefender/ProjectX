@@ -26,7 +26,7 @@ class QuestionCollection:
     def get_question(self, difficulty):
         filtered_questions = [
             q
-            for q in self.get_questions
+            for q in self.questions
             if q.id not in self.used_questions and q.difficulty == difficulty
         ]
         return random.choice(filtered_questions)
