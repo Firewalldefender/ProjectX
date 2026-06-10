@@ -6,5 +6,8 @@ class Question:
         self.options = options
         self.answer = answer
 
-    def display():
-        pass
+    def display(self):
+        print(self.question)
+        labels = ["A", "B", "C", "D"]
+        for i, q in enumerate(self.options):
+            print(f"{labels[i]} {q}", end="\t")
