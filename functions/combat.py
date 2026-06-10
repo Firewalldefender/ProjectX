@@ -16,6 +16,7 @@ class Combat:
         combat_over = False
         while not combat_over:
             question = self.question_collection.get_question(self.enemy.difficulty)
+            self.question_collection.mark_used(question.id)
             question.display()
             player_answer = input("Answer: ").upper()
             labels = {"A": 0, "B": 1, "C": 2, "D": 3}
