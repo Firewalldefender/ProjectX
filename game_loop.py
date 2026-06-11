@@ -23,11 +23,11 @@ class Game:
             self.levels[level.name] = level
 
     def load_enemies(self):
-        enemie_list = [
+        enemies_list = [
             Enemy("SlitheringSnake", 20, "easy"),
             Enemy("Viper", 15, "easy"),
         ]
-        for enemy in enemie_list:
+        for enemy in enemies_list:
             self.enemies[enemy.name] = enemy
 
     def start(self):
@@ -54,9 +54,9 @@ class Game:
 
         if choice["combat"]:
             enemy_list = []
-            for enemy_config in choice["enemies"]:
-                name = enemy_config["name"]
-                wave_count = enemy_config.get("waves", 1)
+            for e in choice["enemies"]:
+                name = e["name"]
+                wave_count = e["waves"]
                 enemy = self.enemies[name]
                 enemy.waves = wave_count
                 enemy.max_waves = wave_count
@@ -69,6 +69,7 @@ class Game:
             player_won = combat_loop.run_combat()
             if not player_won:
                 self.current_level = "defeat"
+                return
 
         self.current_level = choice["next"]
         print(choice["message"])

@@ -15,9 +15,9 @@ class Combat:
         self.question_collection = question_collection
 
     def run_combat(self):
-        print("--Combat started--")
+        print("--- Combat started ---")
         for enemy in self.enemies:
-            print(f"\n--- {enemy.name} (Wave {enemy.waves}/{enemy.max_waves}) ---")
+            print(f"--- {enemy.max_waves} {enemy.name} ---")
             while enemy.is_active():
                 question = self.question_collection.get_question(enemy.difficulty)
                 self.question_collection.mark_used(question.id)
@@ -33,7 +33,7 @@ class Combat:
 
                 print(f"Your HP: {self.player.health}/{self.player.max_health}")
                 print(
-                    f"{enemy.name} HP: {enemy.health} | Waves remaining: {enemy.waves}"
+                    f"{enemy.name} HP: {enemy.health}/{enemy.max_health} | Waves remaining: {enemy.waves}"
                 )
 
                 if not self.player.is_alive():
@@ -42,7 +42,7 @@ class Combat:
 
                 if enemy.is_defeated():
                     print(f"{enemy.name} has been defeated!")
-                    break
 
         print("You defeated all enemies!")
+        print("--- Combat ended ---")
         return True
