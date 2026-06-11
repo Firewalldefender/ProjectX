@@ -10,7 +10,10 @@ class Level2(Level):
                 "text": "Leave the cell again",
                 "next": "victory",
                 "combat": True,
-                "enemies": ["SlitheringSnake"],
+                "enemies": [
+                    {"name": "SlitheringSnake", "waves": 2},
+                    {"name": "Viper", "waves": 1},
+                ],
                 "message": "You venture on",
             }
         ]
