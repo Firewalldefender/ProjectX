@@ -1,12 +1,12 @@
 import json
 import random
-from question import Question
+from functions.question import Question
 
 
 class QuestionCollection:
     def __init__(self):
         self.questions = self.load_questions()
-        self.used_questions = {}
+        self.used_questions = set()
 
     def load_questions(self):
         with open("questions.json", "r") as file:

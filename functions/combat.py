@@ -1,6 +1,6 @@
-from question_collection import QuestionCollection
-from player import Player
-from enemy import Enemy
+from functions.question_collection import QuestionCollection
+from functions.player import Player
+from functions.enemy import Enemy
 
 
 class Combat:
@@ -25,8 +25,8 @@ class Combat:
             else:
                 self.player.take_damage(self.enemy.attack)
             if not self.player.is_alive():
-                print("YOU DIED")
-                pass
+                return False
             if not self.enemy.is_alive():
                 combat_over = True
         print(f"You deafeated the {self.enemy.name}")
+        return True
