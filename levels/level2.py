@@ -7,7 +7,7 @@ class Level2(Level):
 
         self.choices = [
             {
-                "text": "Leave the cell again",
+                "text": "Level2 Placeholder",
                 "next": "victory",
                 "combat": True,
                 "enemies": ["SlitheringSnake"],
