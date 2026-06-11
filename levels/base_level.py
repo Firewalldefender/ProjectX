@@ -1,11 +1,7 @@
 class Level:
-    def __init__(self, name, description):
+    def __init__(self, name):
         self.name = name
-        self.description = description
         self.choices = []
 
     def display(self):
-        pass
-
-    def handle_choice(self):
         pass
