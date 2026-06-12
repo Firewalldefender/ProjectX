@@ -1,7 +1,7 @@
 from functions.question_collection import QuestionCollection
 from functions.player import Player
 from functions.enemy import Enemy
-
+from rich import print
 
 class Combat:
     def __init__(
@@ -33,7 +33,7 @@ class Combat:
 
                 print(f"Your HP: {self.player.health}/{self.player.max_health}")
                 print(
-                    f"{enemy.name} HP: {enemy.health}/{enemy.max_health} | Waves remaining: {enemy.waves}"
+                    f"{enemy.name} HP: {enemy.health}/{enemy.max_health}"
                 )
 
                 if not self.player.is_alive():
@@ -42,6 +42,7 @@ class Combat:
 
                 if enemy.is_defeated():
                     print(f"{enemy.name} has been defeated!")
+            enemy.reset()   
 
         print("You defeated all enemies!")
         print("--- Combat ended ---")

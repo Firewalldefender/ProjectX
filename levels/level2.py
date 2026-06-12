@@ -1,4 +1,5 @@
 from levels.base_level import Level
+from rich import print
 
 # The Coldblooded Hatchery
 
@@ -13,17 +14,18 @@ class Level2(Level):
                 "next": "level3",
                 "combat": True,
                 "enemies": [
-                    {"name": "SlitheringSnake", "waves": 2},
-                    {"name": "Viper", "waves": 1},
+                    {"name": "SlitheringSnake", "waves": 1},
+                    {"name": "WarriorWorm", "waves": 1},
+                    {"name": "SlitheringSnake", "waves": 1}
                 ],
-                "message": "You venture on",
+                "message": "You hid from the PythonsPartisan, but smaller snakes appeared. You killed them succesfully!",
             },
             {
                 "text": "Fight it",
                 "next": "level3",
                 "combat": True,
-                "enemies": ["PythonsPartisan"],
-                "message": "You venture on",
+                "enemies": [{"name": "PythonsPartisan", "waves": 1}],
+                "message": "You took the chance and killed the PythonsPartisan.",
             }
         ]
 

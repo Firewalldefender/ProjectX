@@ -1,4 +1,5 @@
 from levels.base_level import Level
+from rich import print
 
 # The Poisonous Pathways
 

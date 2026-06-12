@@ -1,3 +1,5 @@
+from rich import print
+
 class Question:
     def __init__(self, id, difficulty, question, options, answer):
         self.id = id

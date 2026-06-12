@@ -1,16 +1,14 @@
 class Enemy:
-    def __init__(self, name, health, difficulty):
+    def __init__(self, name, health, difficulty, attack):
         self.name = name
         self.health = health
         self.max_health = health
         self.difficulty = difficulty
-        self.attack = 10
+        self.attack = attack
         self.waves = 1
         self.max_waves = 1
 
     def take_damage(self, damage):
-        if self.health == 0:
-            self.health = self.max_health
         self.health = max(0, self.health - damage)
         if self.health == 0 and self.waves > 0:
             self.waves -= 1
@@ -20,3 +18,6 @@ class Enemy:
 
     def is_defeated(self):
         return self.health == 0
+
+    def reset(self):
+        self.health = self.max_health

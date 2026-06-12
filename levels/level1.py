@@ -1,4 +1,5 @@
 from levels.base_level import Level
+from rich import print
 
 # Deepest Dungeon Stall
 
@@ -12,12 +13,12 @@ class Intro(Level):
                 "text": "Leave the cell",
                 "next": "level2",
                 "combat": True,
-                "enemies": ["SlitheringSnake"],
+                "enemies": [{"name": "SlitheringSnake", "waves": 1}],
                 "message": "You step out of the cell",
             }
         ]
 
     def display(self):
         print(
-            "You wake up in a deep dark cell under the palace of King  Python. He threw you in the dungeon because you mocked the Python language. Your mission is to escape, but beware dangers await you everywhere !"
+            "[red]You wake up in a deep dark cell under the palace of King  Python. He threw you in the dungeon because you mocked the Python language. Your mission is to escape, but beware dangers await you everywhere !"
         )

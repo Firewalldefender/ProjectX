@@ -6,7 +6,7 @@ from levels.base_level import Level
 from levels.level1 import Intro
 from levels.level2 import Level2
 from levels.level3 import Level3
-
+from rich import print
 
 class Game:
     def __init__(self):
@@ -25,8 +25,9 @@ class Game:
 
     def load_enemies(self):
         enemies_list = [
-            Enemy("SlitheringSnake", 20, "easy"),
-            Enemy("Viper", 15, "easy"),
+            Enemy("SlitheringSnake", 20, "easy", 10),
+            Enemy("WarriorWorm", 15, "easy", 15),
+            Enemy("PythonsPartisan", 40, "medium", 20)
         ]
         for enemy in enemies_list:
             self.enemies[enemy.name] = enemy
@@ -40,7 +41,7 @@ class Game:
         if self.current_level == "victory":
             print("YOU WIN")
         else:
-            print("YOU DIED")
+            print("[red]YOU DIED")
             # TODO restart
 
     def run_level(self, level: Level):
