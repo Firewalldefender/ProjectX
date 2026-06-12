@@ -5,6 +5,7 @@ from functions.question_collection import QuestionCollection
 from levels.base_level import Level
 from levels.level1 import Intro
 from levels.level2 import Level2
+from levels.level3 import Level3
 
 
 class Game:
@@ -18,7 +19,7 @@ class Game:
         self.load_enemies()
 
     def load_levels(self):
-        level_list = [Intro(), Level2()]
+        level_list = [Intro(), Level2(),Level3()]
         for level in level_list:
             self.levels[level.name] = level
 
