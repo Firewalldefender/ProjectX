@@ -26,6 +26,159 @@
       "options": ["2", "3", "4", "An infinite number of times"],
       "answer": 1,
       "explanation": "The loop starts with i = 0. It prints 'Hello' and increments i to 1, then prints again and increments to 2, and prints a third time and increments to 3. At i = 3, the condition 3 < 3 becomes False, and the loop terminates."
+    },
+    {
+      "id": 4,
+      "category": "computer_science",
+      "difficulty": "easy",
+      "question": "Python is an example of: ",
+      "options": ["a machine language", "a high-level programming language", "a natural language", "a low-level programming language"],
+      "answer": 1,
+      "explanation": "Python is a high-level programming language: It's easy for humans to read and understand, and it can be used across a wide range of applications"
+    },
+    {
+      "id": 5,
+      "category": "variables",
+      "difficulty": "easy",
+      "question": "Which of the following is a valid variable name in Python?",
+      "options": ["2my_var", "my-var", "my_var", "my$var"],
+      "answer": 2,
+      "explanation": "Variable names in Python must start with a letter or an underscore, and can only contain alphanumeric characters and underscores (A-z, 0-9, and _). They cannot start with a number or contain hyphens or symbols."
+    },
+    {
+      "id": 6,
+      "category": "data_types",
+      "difficulty": "easy",
+      "question": "What is the correct way to create a list in Python?",
+      "options": ["my_list = (1, 2, 3)", "my_list = [1, 2, 3]", "my_list = {1, 2, 3}", "my_list = <1, 2, 3>"],
+      "answer": 1,
+      "explanation": "In Python, lists are created using square brackets `[]`. Parentheses `()` are used for tuples, and curly braces `{}` are used for dictionaries or sets."
+    },
+    {
+      "id": 7,
+      "category": "control_flow",
+      "difficulty": "easy",
+      "question": "Which keyword is used to add an alternative condition if the initial 'if' condition is False?",
+      "options": ["else if", "elseif", "elif", "otherwise"],
+      "answer": 2,
+      "explanation": "Python uses the `elif` keyword, which is short for 'else if', to check for multiple alternative conditions after an initial `if` statement."
+    },
+    {
+      "id": 8,
+      "category": "functions",
+      "difficulty": "easy",
+      "question": "Which keyword is used to define a function in Python?",
+      "options": ["function", "def", "func", "define"],
+      "answer": 1,
+      "explanation": "The `def` keyword is used to define a user-defined function in Python, followed by the function name and parentheses."
+    },
+    {
+      "id": 9,
+      "category": "variables",
+      "difficulty": "easy",
+      "question": "What will be the output of: print(type(10.5))",
+      "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
+      "answer": 1,
+      "explanation": "In Python, numbers with a decimal point are represented by the `float` data type. Integers are represented by `int`."
+    },
+    {
+      "id": 10,
+      "category": "control_flow",
+      "difficulty": "easy",
+      "question": "Which operator is used to check if two values are equal?",
+      "options": ["=", "==", "===", "!="],
+      "answer": 1,
+      "explanation": "The `==` operator is the equality operator in Python. The `=` operator is for assignment, and `!=` is for inequality."
+    },
+    {
+      "id": 11,
+      "category": "data_types",
+      "difficulty": "easy",
+      "question": "How do you access the first element of a list named 'my_list'?",
+      "options": ["my_list[1]", "my_list[0]", "my_list.first()", "my_list.get(0)"],
+      "answer": 1,
+      "explanation": "Python lists use zero-based indexing, meaning the first element is located at index `0`."
+    },
+    {
+      "id": 12,
+      "category": "functions",
+      "difficulty": "easy",
+      "question": "What keyword is used to return a value from a function?",
+      "options": ["send", "output", "give", "return"],
+      "answer": 3,
+      "explanation": "The `return` keyword is used to exit a function and pass a specific value back to the caller."
+    },
+    {
+      "id": 13,
+      "category": "variables",
+      "difficulty": "easy",
+      "question": "What is the result of '5' + '5' in Python?",
+      "options": ["10", "55", "Error", "5 5"],
+      "answer": 1,
+      "explanation": "When the `+` operator is used with two strings, it performs concatenation, joining them together instead of performing mathematical addition."
+    },
+    {
+      "id": 14,
+      "category": "data_types",
+      "difficulty": "easy",
+      "question": "Which function is used to convert a value into a string?",
+      "options": ["string()", "str()", "to_str()", "convert_str()"],
+      "answer": 1,
+      "explanation": "The built-in `str()` function converts the specified value into a string data type."
+    },
+    {
+      "id": 15,
+      "category": "control_flow",
+      "difficulty": "easy",
+      "question": "What is the output of the following code?\n\nis_married = False\nif is_married:\n    print('A')\nelse:\n    print('B')",
+      "options": ["A", "B", "Nothing", "Error"],
+      "answer": 1,
+      "explanation": "Since the condition in the `if` statement evaluates to `False`, the code block under the `if` is skipped and the code block under the `else` statement is executed, printing 'B'."
+    },
+    {
+      "id": 16,
+      "category": "variables",
+      "difficulty": "easy",
+      "question": "How do you insert comments in Python code?",
+      "options": ["// This is a comment", "# This is a comment", "/* This is a comment */", ""],
+      "answer": 1,
+      "explanation": "Python uses the hash character `#` to start a single-line comment. Everything after the `#` on that line is ignored by the interpreter."
+    },
+    {
+      "id": 17,
+      "category": "data_types",
+      "difficulty": "easy",
+      "question": "Which of the following collection types does NOT allow duplicate elements?",
+      "options": ["list", "tuple", "set", "array"],
+      "answer": 2,
+      "explanation": "A `set` in Python is an unordered collection of unique elements, meaning it automatically discards any duplicate values."
+    },
+    {
+      "id": 18,
+      "category": "functions",
+      "difficulty": "medium",
+      "question": "What will be the output of this code?\n\ndef greet():\n    print('Hi')\n\ngreet()",
+      "options": ["Error", "Nothing", "Hi", "greet"],
+      "answer": 2,
+      "explanation": "The code defines a function named `greet` that prints 'Hi', and then immediately calls it on the final line, resulting in 'Hi' being printed."
+    },
+    {
+      "id": 19,
+      "category": "control_flow",
+      "difficulty": "medium",
+      "question": "Which of the following is used to loop through a sequence of numbers over a specific range?",
+      "options": ["for i in range(5):", "while range(5):", "loop 5 times:", "repeat(5):"],
+      "answer": 0,
+      "explanation": "The `for i in range(5):` loop is the standard Pythonic way to iterate over a sequence of numbers (from 0 up to 4 in this case)."
+    },
+    {
+      "id": 20,
+      "category": "variables",
+      "difficulty": "medium",
+      "question": "What is the correct way to assign the value 10 to a variable named 'x'?",
+      "options": ["x = \"10\"", "10 = x", "x = 10", "x == 10"],
+      "answer": 2,
+      "explanation": "In Python, assignment is done using a single equals sign `=`, with the variable name on the left and the value on the right."
     }
   ]
 }
