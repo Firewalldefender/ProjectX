@@ -1,5 +1,7 @@
 from levels.base_level import Level
 
+# Deepest Dungeon Stall
+
 
 class Intro(Level):
     def __init__(self):
@@ -9,9 +11,9 @@ class Intro(Level):
             {
                 "text": "Leave the cell",
                 "next": "level2",
-                "combat": False,
-                "enemies": [],
-                "message": "You venture on",
+                "combat": True,
+                "enemies": ["SlitheringSnake"],
+                "message": "You step out of the cell",
             }
         ]
 
