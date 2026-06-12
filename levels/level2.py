@@ -12,7 +12,10 @@ class Level2(Level):
                 "text": "Hide from it", 
                 "next": "level3",
                 "combat": True,
-                "enemies": ["SlitheringSnake"],
+                "enemies": [
+                    {"name": "SlitheringSnake", "waves": 2},
+                    {"name": "Viper", "waves": 1},
+                ],
                 "message": "You venture on",
             },
             {
